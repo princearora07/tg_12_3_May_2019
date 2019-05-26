@@ -1,0 +1,76 @@
+ls: cannot access /usr/lib/spark/lib/lib/spark-assembly-*.jar: No such file or directory
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = cloudera_20190525012828_79a2aefc-a873-4704-acc0-b072b1555ce5
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1558767299026_0003, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1558767299026_0003/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1558767299026_0003
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2019-05-25 01:29:05,414 Stage-1 map = 0%,  reduce = 0%
+2019-05-25 01:30:06,330 Stage-1 map = 0%,  reduce = 0%
+2019-05-25 01:30:19,207 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.49 sec
+2019-05-25 01:30:45,352 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 4.6 sec
+MapReduce Total cumulative CPU time: 4 seconds 600 msec
+Ended Job = job_1558767299026_0003
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 4.6 sec   HDFS Read: 8453 HDFS Write: 11 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 600 msec
+OK
+Time taken: 130.636 seconds, Fetched: 1 row(s)
+ max value is : 2019-05-25
+ls: cannot access /usr/lib/spark/lib/lib/spark-assembly-*.jar: No such file or directory
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = cloudera_20190525013131_68ed1cad-3d11-4f27-bb6d-9251fd06e0a2
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1558767299026_0004, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1558767299026_0004/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1558767299026_0004
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 1
+2019-05-25 01:31:23,723 Stage-1 map = 0%,  reduce = 0%
+2019-05-25 01:32:09,553 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 5.0 sec
+2019-05-25 01:32:35,753 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 7.93 sec
+MapReduce Total cumulative CPU time: 7 seconds 930 msec
+Ended Job = job_1558767299026_0004
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1558767299026_0005, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1558767299026_0005/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1558767299026_0005
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2019-05-25 01:32:50,725 Stage-2 map = 0%,  reduce = 0%
+2019-05-25 01:33:00,626 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 1.69 sec
+2019-05-25 01:33:11,670 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 4.22 sec
+MapReduce Total cumulative CPU time: 4 seconds 220 msec
+Ended Job = job_1558767299026_0005
+Loading data to table project1_ds_s1.customers partition (load_date=null)
+	 Time taken for load dynamic partitions : 365
+	Loading partition {load_date=2019-05-26}
+	 Time taken for adding to write entity : 3
+Partition project1_ds_s1.customers{load_date=2019-05-26} stats: [numFiles=1, numRows=1001, totalSize=36800, rawDataSize=1187186]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2  Reduce: 1   Cumulative CPU: 7.93 sec   HDFS Read: 75859 HDFS Write: 141650 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 4.22 sec   HDFS Read: 150301 HDFS Write: 36908 SUCCESS
+Total MapReduce CPU Time Spent: 12 seconds 150 msec
+OK
+Time taken: 130.667 seconds

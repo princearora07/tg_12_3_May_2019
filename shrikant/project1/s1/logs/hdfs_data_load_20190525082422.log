@@ -1,0 +1,5 @@
+Files loaded in customers table successfully
+put: `/home/cloudera/project1/s1/srcfiles/working/product*': No such file or directory
+Failed to load files in products table
+put: `/home/cloudera/project1/s1/srcfiles/working/trans*': No such file or directory
+Failed to load files in transactions table

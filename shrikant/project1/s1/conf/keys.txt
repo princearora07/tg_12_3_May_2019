@@ -1,0 +1,4 @@
+customer_fields=custno,firstname,lastname,gender,age,profession,contactNo,emailId,city,state,isActive,createdDate,UpdatedDate
+product_fields=productno,productName,Description,isActive,createdDate,UpdatedDate
+customer_nested_fields=info.custno,info.firstname,lastname,gender,age,profession,contactNo,emailId,city,state,isActive,createdDate,UpdatedDate
+product_nested_fields=abc.productno,productname,Description,isActive,createdDate,UpdatedDate
